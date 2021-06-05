@@ -4,7 +4,7 @@ public class Rabbits {
 
     public static void main(String[] args) {
 
-        willTwoRabbitsMeet(-100, -3, 10, 1);
+        willTwoRabbitsMeet(0, 3, 4, 2);
     }
 
     public static void willTwoRabbitsMeet(int x1, int v1, int x2, int v2) {
@@ -35,7 +35,7 @@ public class Rabbits {
             longerJumpLengthOfTheRabbit += incrementForLongerLength;
             firstRabbit += v1;
             secondRabbit += v2;
-            System.out.println(firstRabbit + " " + secondRabbit);
+//            System.out.println(firstRabbit + " " + secondRabbit);
             if (firstRabbit == secondRabbit) {
                 flag = false;
                 System.out.println("YES");
