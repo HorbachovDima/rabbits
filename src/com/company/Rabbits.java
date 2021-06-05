@@ -35,7 +35,7 @@ public class Rabbits {
             longerJumpLengthOfTheRabbit += incrementForLongerLength;
             firstRabbit += v1;
             secondRabbit += v2;
-            System.out.println(firstRabbit + " " + secondRabbit);
+//            System.out.println(firstRabbit + " " + secondRabbit);
             if (firstRabbit == secondRabbit) {
                 flag = false;
                 System.out.println("YES");
@@ -47,7 +47,7 @@ public class Rabbits {
     }
 
     private static boolean checkBasicCases(int x1, int v1, int x2, int v2) {
-        if (x1 < 0 || v1 < 0 || x2 < 0 || v2 < 0) {
+        if (v1 < 0 || v2 < 0) {
             System.out.println("Do not use negative numbers!");
             return false;
         } else if (x1 > x2 && v1 > v2 || x2 > x1 && v2 > v1 || x1 == x2 && v1 != v2 || x1 != x2 && v1 == v2) {
